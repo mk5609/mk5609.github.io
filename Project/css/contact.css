@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap");
+
+main {
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+main > .profile {
+  display: inline-block;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 50px;
+}
+
+main > .profile > p {
+  text-align: center;
+  font-family: "Dongle", sans-serif;
+  font-size: 2.5rem;
+}
+
+main > .profile > p > span {
+  color: blueviolet;
+  font-weight: bolder;
+}
+
+main > .email {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+main > .email > .email01 {
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+main > .email > .email01 i {
+  font-size: 3rem;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+main > .email > .email01 p:nth-of-type(1) {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 100px;
+  top: 25%;
+  font-weight: bolder;
+}
+
+main > .email > .email01 p:nth-of-type(2) {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+}
+
+main > .email > .email01 {
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .email > .email01 i {
+  font-size: 3rem;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+main > .email > .email01 p:nth-of-type(1) {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 100px;
+  top: 25%;
+}
+
+main > .email > .email01 p:nth-of-type(2) {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+}
+
+main > .email > .email01 > .phone,
+.email_,
+.address {
+  width: 500px;
+  height: 100px;
+  border: 1px solid black;
+  position: relative;
+}
+
+main > .email > .email02 {
+  width: 70vw;
+  height: 100%;
+  margin-top: 72px;
+}
+
+main > .email > .email02 > form {
+  width: 80%;
+  height: 80%;
+  border: solid 1px black;
+  position: relative;
+}
+
+main > .email > .email02 > form > label {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  position: absolute;
+}
+
+main > .email > .email02 > form > label:nth-of-type(1) {
+  top: 15px;
+  left: 10px;
+}
+
+main > .email > .email02 > form > input:nth-of-type(1) {
+  width: 1045px;
+  height: 40px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+main > .email > .email02 > form > label:nth-of-type(2) {
+  top: 125px;
+  left: 10px;
+}
+
+main > .email > .email02 > form > input:nth-of-type(2) {
+  width: 1045px;
+  height: 40px;
+  position: absolute;
+  top: 215px;
+  left: 10px;
+}
+
+main > .email > .email02 > form > label:nth-of-type(3) {
+  top: 235px;
+  left: 10px;
+}
+
+main > .email > .email02 > form > textarea {
+  width: 1045px;
+  height: 200px;
+  position: absolute;
+  top: 325px;
+  left: 10px;
+}
+
+main > .email > .email02 > form > input:nth-of-type(3) {
+  width: 1052px;
+  height: 45px;
+  position: absolute;
+  top: 545px;
+  left: 10px;
+  background-color: coral;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 170vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  main > .email {
+    width: 100vw;
+    height: 170vh;
+    display:inline-block;
+  }
+
+  main > .email > .email01 {
+    width: 100vw;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  main > .email > .email01 > .phone
+  {
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    top:5%;
+    right:30%;
+  }
+
+  main > .email > .email01 > .email_ {
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    top:15%;
+    right:30%;
+  }
+
+  main > .email > .email01 > .address {
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    top:25%;
+    right:30%;
+  }
+
+  main > .email > .email02 {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top:90%;
+    right:-13%;
+  }
+
+  main > .email > .email02 > form {
+    width: 400px;
+    height: 75%;
+    border: solid 1px black;
+    position: relative;
+  }
+
+  main > .email > .email02 > form > input:nth-of-type(1) {
+    width: 92.5%;
+    height: 40px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+  }
+
+  
+  main > .email > .email02 > form > input:nth-of-type(2) {
+    width: 92.5%;
+    height: 40px;
+    position: absolute;
+    top: 220px;
+    left: 10px;
+  }
+
+  main > .email > .email02 > form > textarea {
+    width: 92.5%;
+    height: 170px;
+    position: absolute;
+    top: 330px;
+    left: 10px;
+  }
+
+  main > .email > .email02 > form > input:nth-of-type(3) {
+    width: 95%;
+    height: 40px;
+    position: absolute;
+    top: 530px;
+    left: 10px;
+    background-color: coral;
+  }
+}

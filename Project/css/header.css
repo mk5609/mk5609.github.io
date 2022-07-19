@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+header > .logo,
+.menu {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .logo,
+.menu > p,
+a {
+  font-size: 2rem;
+  font-family: "Edu SA Beginner", cursive;
+  text-decoration: none;
+  color: black;
+}
+
+header > .logo > a > p > i {
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-right: 5px;
+}
+
+header > .menu > a {
+  padding: 20px;
+}
+
+#menu_bar_bar {
+  display: none;
+}
+
+@media ( max-width: 768px ) {
+.logo {
+  position: absolute;
+  left: 0;
+}
+
+  .menu {
+    display: none;
+  }
+
+  #menu_bar_bar {
+    display: none;
+  }
+
+  #menu_bar_bar:checked + .menu {
+    display: inline-block;
+    width:100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin-top: 10vh;
+    z-index: 1;
+  }
+
+  .menu_bar {
+    position: absolute;
+    top:25px;
+    right:10px;
+  }
+
+  .menu_bar
+  {
+    cursor: pointer;
+  }
+  
+  .menu_bar > div {
+    width:50px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: black;
+    cursor:pointer;
+  }
+}

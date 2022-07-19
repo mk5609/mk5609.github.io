@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+h1 {
+  width:300px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-left:auto;
+  margin-right: auto;
+  padding:20px;
+  border-radius: 10% 40%;
+  background-color:rgb(210, 120, 255);
+  font-family: 'Dongle', sans-serif;
+}
+
+main {
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .items {
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+main > .items > img {
+  width:500px;
+  height: 300px;
+  margin-top: 50px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+main > .items > img:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+  main > .items {
+    width:100vw;
+    height: 300vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  main > .items > img {
+    width:400px;
+    height: 250px;
+    margin-top: 50px;
+    border: 1px solid black;
+    transition: 0.5s;
+  }
+
+  main {
+    width:100vw;
+    height: 300vh;
+  }
+}
