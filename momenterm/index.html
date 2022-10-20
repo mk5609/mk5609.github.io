@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="theme.css" rel="stylesheet" type="text/css" />
+    <title>모멘텀</title>
+    <style>
+      body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .hidden {
+        display: none;
+      }
+      .bg_desc {
+        position: fixed;
+        left: 0;
+        bottom: 2rem;
+        padding-left: 1rem;
+        height: 2rem;
+        line-height: 2rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="icon"/>
+    <img class="email-icon" src="email.png"/>
+    <p class="icon_text">21℃</p>
+    <button class="theme">Toggle Theme</button>
+    <p class="loginName hidden">Hello</p>
+    <form id="loginForm">
+      <input type="text" placeholder="로그인 이름 입력" required />
+      <button>Log-In</button>
+    </form>
+    <div class="wrap">
+      <h1 class="clock">00:00:00</h1>
+      <div class="quote">
+        <button>다음</button>
+        <span>명언</span>
+        <span>작가</span>
+      </div>
+    </div>
+    <form id="todoForm" style="display: none">
+      <input type="text" placeholder="할일을 입력하세요" required />
+    </form>
+    <form
+        class="gform"
+        method="post"
+        data-email="msuk5609@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbwJYnt4RAaPT5WkD3vLuIIwSv8qB_NOWapssU7e35lnHMdmRGcpy-fi2ZICnhS1xIey/exec"
+      >
+        <fieldset class="form-elements hidden">
+          <div class="box-input">
+            <label for="userName">Name</label>
+            <input
+              type="text"
+              id="userName"
+              name="name"
+              placeholder="이름입력"
+            />
+          </div>
+          <div class="box-input">
+            <label for="userEmail">Email-Address</label>
+            <input
+              type="email"
+              id="userEmail"
+              name="name"
+              placeholder="이메일 입력"
+            />
+          </div>
+          <div class="box-input">
+            <label for="userMessage">Message</label>
+            <textarea name="message" id="userMessage"></textarea>
+          </div>
+          <div class="box-input">
+            <button type="submit" class="btn-send">Send Message</button>
+          </div>
+        </fieldset>
+        <div style="display: none" class="thankyou_message">
+          <p>
+            메일이 성공적으로 보내졌습니다. 빠른 시일 내에 답변 드리겠습니다.
+          </p>
+        </div>
+      </form>
+    <ul class="todoList"></ul>
+    <p class="bg_desc" style="display: none;"></p>
+    <script src="js/theme.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todoList.js"></script>
+    <!-- <script src="./js/fetch.js"></script> -->
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/01.js"></script>
+  </body>
+</html>
