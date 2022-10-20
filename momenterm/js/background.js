@@ -1,7 +1,7 @@
 // const ACCESS_KEY = 'kWuw6vg9fc9Hehd5aeURFw-qECbF9kvWI91pLfqrzMY';
 // const URL = `https://api.unsplash.com/photos/random?query=landscape&client_id=${ACCESS_KEY}`;
 // const URL = `https://kyung0446.github.io/json/image_unsplash.json`;
-const URL = `image_unsplash.json`;
+const URL = `../image_unsplash.json`;
 // console.log( URL );
 
 const changeBgDesc = (desc,user,country) => {
