@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <section>
+        <div class="title">
+          <img src="images/title.png" alt="title" />
+        </div>
+      </section>
+      <section>
+        <p>저를 소개할께요!</p>
+        <div class="profile">
+          <div class="profile-img">
+            <img src="images/profile.png" alt="profile" />
+            <p class="profile-text-01">민경석</p>
+            <p class="profile-text-02">1999.07.01</p>
+          </div>
+          <p class="profile-text-03">기본정보</p>
+          <p class="profile-text-04">거주지 : 광주시 경안동</p>
+          <p class="profile-text-05">핸드폰 : 010 4783 2562</p>
+          <p class="profile-text-06">사용 가능한 툴</p>
+          <p class="profile-text-07">HTML/CSS</p>
+          <p class="profile-text-08">JavaScript</p>
+          <p class="profile-text-09">PhotoShop</p>
+          <p class="profile-text-10">교육기관</p>
+          <p class="profile-text-11">ICT 폴리텍대학교</p>
+        </div>
+      </section>
+      <section>
+        <p class="profile-text-01">이런 툴을 다룰 수 있어요</p>
+        <div class="tool">
+          <p>HTML/CSS</p>
+          <p>JavaScript</p>
+          <p>Photoshop</p>
+        </div>
+        <div class="tool-desc">
+          <p>웹 표준, 접근성을
+            준수하며
+            반응형 레이아웃
+            제작이 가능합니다.</p>
+        </div>
+      </section>
+      <section>
+        <p class="profile-text-01">열심히 만들었어요</p>
+        <div class="portfolio">
+          <a href="https://mk5609.github.io/Project/html/index.html">
+            <img src="images/p1.png" alt="p1">
+          </a>
+          <a href="https://mk5609.github.io/20220906_MKS/index.html">
+            <img src="images/p2.png" alt="p2">
+          </a>
+          <a href="https://mk5609.github.io/momenterm">
+            <img src="images/p3.png" alt="p3">
+          </a>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      let pageCount = 0;
+      let scrollHeight = 0;
+      const MAX_PAGE = document.querySelectorAll("section").length;
+  
+      const handlerWheel = (event) => {
+        if (event.deltaY < 0) {
+          if (pageCount <= 0) return;
+          pageCount--;
+        }
+        if (event.deltaY > 0) {
+          if (pageCount >= MAX_PAGE - 1) return;
+          pageCount++;
+        }
+        scrollHeight = pageCount * window.innerHeight;
+        window.scrollTo({left:0, top:scrollHeight, behavior:"smooth"});
+      }
+  
+      window.addEventListener("wheel", handlerWheel, {passive:false});
+    </script>
+  </body>
+</html>
